@@ -1,0 +1,50 @@
+.button-brown
+    display inline-block
+    background-color #c99a64
+    // border 1px solid #969696
+    border none
+    outline none
+    color white
+    font(Medium)
+    font-size 16px
+    line-height 1
+    text-align center
+    padding 17px 20px
+    text-decoration none
+    position relative
+    &::before
+        content ""
+        display block
+        width 100%
+        height 0
+        position absolute
+        top 0
+        left 0
+        right 0
+        background-color darken(#c99a64,15%)
+        transition height .5s ease .2s
+    &:hover
+        color @color
+        text-decoration none
+        border-color darken(#c99a64,15%)
+        &::before
+            height 100%
+            transition height .5s ease
+    span
+        position relative
+        z-index 10
+
+    &--form
+        width 100%
+        height 79px
+        font(Medium,40)
+        font-size 22px
+        padding 0 20px
+        background-color #bf8849
+        border none
+        cursor pointer
+        &::before
+            background-color darken(#bf8849, 15%)
+        +below(767px)
+            height 60px
+

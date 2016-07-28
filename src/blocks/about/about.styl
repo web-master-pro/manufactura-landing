@@ -1,0 +1,101 @@
+.about
+    width 100%
+    background-color #fff
+    +below(767px)
+        background #fff url(img/about-bottom.jpg) no-repeat center center
+        background-size cover
+
+    &__in
+        container(1210px)
+        padding 90px 20px 40px
+        min-height 910px
+        +below(1170px)
+            min-height 700px
+        +below(1050px)
+            min-height 600px
+        +below(900px)
+            min-height 500px
+        +below(767px)
+            background-color rgba(255,255,255,.9)
+            min-height auto
+        +below(479px)
+            padding 60px 20px 30px
+
+    &__img
+        display inline-block
+        box-shadow 10px 95.5px 117px rgba(0, 0, 0, 0.17)
+        position absolute
+        img
+            display block
+            width 100%
+            max-width 100%
+            height auto
+        &--bottom
+            top 90px
+            left 140px
+            animation-duration 1.5s
+            animation-delay 0s
+            +below(1170px)
+                top 20px
+                left 40px
+                width 35%
+            +below(900px)
+                width 30%
+                left 20px
+        &--top
+            top 0
+            left 20px
+            animation-duration 1.5s
+            animation-delay .5s
+            +below(1170px)
+                top 0
+                left 0
+                width 30%
+            +below(900px)
+                width 25%
+        +below(767px)
+            display none
+
+
+    &__content
+        max-width 460px
+        position absolute
+        top 225px
+        right 30px
+        padding 0
+        +below(1170px)
+            top 50px
+        +below(991px)
+            right 0
+            top 20px
+        +below(767px)
+            position relative
+            top auto
+            left auto
+            right auto
+            margin 0 auto
+            text-align center
+
+
+    &__title
+        color black
+        font(Extra, 40)
+        font-size 58px
+        font-weight 400
+        line-height 1
+        text-transform uppercase
+        margin 0 0 .78em
+        +below(479px)
+            font-size 36px
+
+    &__text
+        color #404040
+        font(Light, 40)
+        font-size 22px
+        line-height 1.6
+        margin 0 0 1.6em
+        strong
+            font(Medium, 40)
+        +below(479px)
+            font-size 18px
+

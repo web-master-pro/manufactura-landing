@@ -1,0 +1,59 @@
+html
+    box-sizing border-box
+    height 100%
+    margin 0
+
+*, *:before, *:after
+    box-sizing inherit
+
+body
+    color #333
+    font()
+    font-size 16px
+    line-height 1
+    background-color #fff
+    min-width 300px
+    height 100%
+    position relative
+    overflow-x hidden
+    overflow-y scroll
+    -webkit-font-smoothing subpixel-antialiased !important
+    -webkit-backface-visibility hidden
+       -moz-backface-visibility hidden
+        -ms-backface-visibility hidden
+
+    &:after
+        display table
+        clear both
+        content ""
+
+.hidden
+    display none
+
+a, input, *:focus
+    outline none
+
+.animated
+    animation-duration 1.0s
+    animation-delay 0s
+
+// Выключаем анимацию на IE
+.ie
+.edge
+    .animated
+        transition-property none !important
+        transform none !important
+        animation none !important
+
+// Выключаем анимацию на мобильниках
++below(767px)
+    .animated
+        transition-property none !important
+        transform none !important
+        animation none !important
+
+.bounceInDown
+.bounceInUp
+    opacity 1 !important
+
+

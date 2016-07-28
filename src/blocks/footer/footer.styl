@@ -1,0 +1,67 @@
+.footer
+    width 100%
+    background-color #0d0e0e
+
+    &__in
+        container(1210px)
+        padding 40px 20px
+        display flex
+        flex-flow row wrap
+        +above(768px)
+            padding 75px 20px 70px
+            justify-content space-between
+
+    &__legal
+    &__privacy
+        flex 0 0 100%
+        max-width 100%
+        color white
+        font(Light, 40)
+        font-size 16px
+        line-height 1.2
+        margin 0
+        text-align center
+        +above(768px)
+            flex 0 0 auto
+            margin-bottom 0
+
+
+    &__legal
+        +above(768px)
+            text-align left
+
+    &__privacy
+        margin-top 1em
+
+        a
+
+            color white
+            text-decoration none
+            padding-bottom 1px
+            padding-top 1px
+            position relative
+            &::after
+                content ""
+                display block
+                width 0px
+                height 1px
+                background-color #fff
+                position absolute
+                left 50%
+                right 50%
+                bottom 0
+                transition all .3s ease .3s
+            &:hover
+                color @color
+                text-decoration none
+                &::after
+                    width 100%
+                    left 0
+                    right 0
+        +above(768px)
+            text-align right
+            margin-top 0
+            display flex
+            flex-flow row nowrap
+            align-items center
+            justify-content flex-end

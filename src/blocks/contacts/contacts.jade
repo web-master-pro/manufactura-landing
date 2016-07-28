@@ -1,0 +1,17 @@
+mixin contacts()
+    .contacts&attributes(attributes)
+        .contacts__in
+            .contacts__box
+                h2.contacts__title Наши контакты
+                p.contacts__text Мы всегда готовы проконсультировать Вас по любым вопросам!
+                a(href="tel:").contacts__phone + 7 (926) 151-91-51
+                .contacts__social
+                    .contacts__whatsapp
+                    .contacts__viber
+                    .contacts__telegram
+                address.contacts__text г. Москва, ул. Центральная , д.&nbsp;154
+                h3.contacts__subtitle Напишите нам
+                a(href="mailto:lombardmanufacture@gmail.com").contacts__email lombardmanufacture@gmail.com
+                a(href="#form-ask" role="button").button.contacts__button.js-popup
+                    span Задать вопрос
+        .contacts__map#map

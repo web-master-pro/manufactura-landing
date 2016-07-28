@@ -1,0 +1,20 @@
+include ../button-nav/button-nav
+include ../nav/nav
+
+mixin header()
+    header.header&attributes(attributes)
+        .header__in
+            +button-nav(class="header__button-nav").animated.fadeInLeft
+            +nav(class="header__nav")
+            .header__logo(title="Мануфактура").animated.bounceInDown
+            .header__phone-block.animated.fadeInRight
+                a(href="tel:+79261519151").header__phone +7 (926) 151-91-51
+                a(href="#form-callback").header__call.js-popup Закажите обратный звонок
+
+            .header__headers.animated.fadeIn
+                h1.header__title.animated.fadeInRight За 10 минут оценим ваши часы 
+                p.header__subtitle.animated.fadeInRight И сразу выплатим <strong>наличные</strong>
+                p.header__cost.animated.fadeInRight Узнайте стоимость часов онлайн! Ответим&nbsp;за&nbsp;2&nbsp;минуты.
+                a(href="#form-cost" role="button").button-brown.header__button.js-popup.animated.fadeInUp
+                    span Узнать стоимость
+

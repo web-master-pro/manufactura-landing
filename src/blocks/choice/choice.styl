@@ -1,0 +1,140 @@
+.choice
+    width 100%
+    background #0b0c0e url(img/choice-bg.jpg) no-repeat center center
+    background-size cover
+    &__in
+        container(1210px)
+        padding 150px 20px 40px
+        min-height 1082px
+        +below(991px)
+            padding 120px 20px 40px
+            min-height auto
+        +below(479px)
+            padding-top 70px
+
+
+    &__title
+        color white
+        font(Extra)
+        font-size 58px
+        line-height 1.25
+        text-transform uppercase
+        margin 0 0 30px
+        +below(991px)
+            max-width 800px
+            margin 0 auto 30px
+            text-align center
+        +below(767px)
+            font-size 48px
+        +below(479px)
+            font-size 34px
+
+    &__subtitle
+        color white
+        font()
+        font-size 30px
+        line-height 1.2
+        margin 0 0 30px
+        +below(991px)
+            text-align center
+        +below(767px)
+            font-size 24px
+        +below(479px)
+            font-size 20px
+
+    &__options-box
+        width 100%
+        max-width 900px
+        min-height 700px
+        background-color #222529
+        box-shadow 8px 80px 133px rgba(0, 0, 0, 0.18)
+        position absolute
+        top 510px
+        left 295px
+        z-index 50
+        +below(1250px)
+            max-width 660px
+            min-height 650px
+        +below(991px)
+            position relative
+            top auto
+            left auto
+            margin 140px auto 0
+            padding 160px 50px 40px 80px
+            min-height auto
+        +below(767px)
+            padding 150px 40px 40px
+        +below(479px)
+            padding 110px 20px 20px
+
+    &__select-box
+        width 100%
+        max-width 370px
+        height 340px
+        background-color white
+        box-shadow 8px 80px 133px black
+        padding-top 90px
+        position absolute
+        top 70px
+        left -275px
+        z-index 200
+        +below(1250px)
+            width 340px
+        +below(991px)
+            max-width 320px
+            top -90px
+            left 50%
+            margin-left -160px
+            height 180px
+            padding-top 30px
+            box-shadow 8px 20px 50px black
+        +below(479px)
+            max-width 100%
+            height 160px
+            width 100%
+            margin-left 0
+            left 0
+
+    &__list
+        display block
+        width 100%
+        max-width 530px
+        list-style none
+        padding 0
+        margin 0
+        opacity 0
+        position absolute
+        top 120px
+        left 230px
+        transition all .5s ease
+        &.active
+            opacity 1
+        +below(1250px)
+            left 120px
+        +below(991px)
+            position relative
+            top auto
+            left auto
+            display none
+            &.active
+                display block
+
+    &__item
+        display block
+        padding 0 0 0 60px
+        background-image embedurl("../../svg/tick.svg","")
+        background-size 23px 19px
+        background-repeat no-repeat
+        background-position 0 3px
+        color white
+        font()
+        font-size 22px
+        line-height 1.2
+        margin 0 0 30px
+        +below(479px)
+            padding-left 35px
+            background-size 16px 14px
+            font-size 18px
+            margin-bottom 20px
+
+

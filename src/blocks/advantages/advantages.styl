@@ -1,0 +1,100 @@
+.advantages
+    width 100%
+    position relative
+
+    &__box
+        container(1580px)
+        padding 50px 20px 20px
+        position relative
+        top 0
+        z-index 100
+        background #222529 url(img/advantages-box-bg.jpg) no-repeat center center
+        background-size cover
+        box-shadow 10px 95.5px 117px rgba(0, 0, 0, 0.12)
+        +above(480px)
+            padding 50px 0 20px
+        +above(768px)
+            top -100px
+        +above(992px)
+            padding 135px 0 60px
+            top -140px
+
+
+    &__list
+        list-style none
+        font-size 0
+        text-align center
+        padding 0
+        margin 0
+
+    &__item
+        display inline-flex
+        flex-flow row nowrap
+        justify-content center
+        align-items center
+        width 100%
+        max-width 100%
+        min-height 70px
+        padding 70px 0 0 0
+        color white
+        font(Light, 40)
+        font-size 18px
+        line-height 1.2
+        text-align center
+        margin 0 auto 30px
+        position relative
+        &::before
+            content ""
+            display block
+            position absolute
+            top 0
+            left 50%
+            transform translateX(-50%)
+            background-position 0 0
+            background-repeat no-repeat
+            background-size cover
+            +above(425px)
+                left 0
+                top 50%
+                transform translateY(-50%)
+
+        &:nth-child(1)
+            &::before
+                size 62px 62px
+                background-image embedurl("../../svg/loupe.svg", "")
+        &:nth-child(2)
+            &::before
+                size 60px 60px
+                background-image embedurl("../../svg/clock.svg", "")
+        &:nth-child(3)
+            &::before
+                size 57px 63px
+                background-image embedurl("../../svg/money.svg", "")
+        &:nth-child(4)
+            &::before
+                size 56px 40px
+                background-image embedurl("../../svg/18.svg", "")
+        &:nth-child(5)
+            &::before
+                size 53px 48px
+                background-image embedurl("../../svg/mask.svg", "")
+        &:nth-child(6)
+            &::before
+                size 64px 58px
+                background-image embedurl("../../svg/parking.svg", "")
+        +above(425px)
+            max-width 420px
+            font-size 22px
+            text-align left
+            justify-content flex-start
+            padding 0 0 0 100px
+            margin 0 20px 20px
+        +above(992px)
+            margin 0 25px 65px
+        +above(1280px)
+            margin 0 75px 65px
+            max-width 440px
+
+
+
+

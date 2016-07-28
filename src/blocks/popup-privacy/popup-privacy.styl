@@ -1,0 +1,56 @@
+.popup-privacy
+    display block
+    width 100%
+    height auto
+    max-width 1000px
+    min-height 420px
+    background #fff
+    padding 70px 80px 50px
+    position relative
+    margin 20px auto
+    +below(479px)
+        padding 70px 20px 20px
+
+    &__content
+        display block
+        width 100%
+        height 100%
+        color #333
+        font()
+        font-size 18px
+        line-height 1.4
+        text-align left
+        +below(479px)
+            font-size 16px
+
+        h2
+            color #000
+            font(Extra)
+            font-size 30px
+            line-height 1.2
+            text-align center
+            text-transform uppercase
+            margin 0 auto 50px
+            +below(479px)
+                font-size 22px
+
+        h3
+            color #333
+            font-size 24px
+            font(Bold)
+            line-height 1
+            text-align center
+            margin 0 0 25px
+            +below(479px)
+                font-size 20px
+
+        p
+            line-height 1.3
+            margin 0 0 20px
+
+        a
+            color #003874
+            text-decoration: underline
+            &:hover
+                color @color
+                text-decoration none

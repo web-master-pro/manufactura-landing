@@ -1,0 +1,158 @@
+.contacts
+    width 100%
+    position relative
+
+    &__map
+        width 100%
+        background-color #0b0c0e
+        background-color #ccc
+        position absolute
+        top 215px
+        left 0
+        right 0
+        bottom 0
+        z-index 1
+        +below(991px)
+            height 500px
+            position relative
+            top auto
+            left auto
+            right auto
+            bottom auto
+
+    &__in
+        container(1210px)
+        padding 0 20px
+        min-height 890px
+        z-index 100
+        +below(991px)
+            min-height auto
+
+    &__box
+        display block
+        width 100%
+        max-width 573px
+        // height 780px
+        background-color white
+        box-shadow 1.8px 16.9px 204px rgba(0, 0, 0, 0.1)
+        position absolute
+        top 0
+        right 20px
+        padding 85px 80px
+        +below(991px)
+            position relative
+            top auto
+            right auto
+            margin 0 auto
+            box-shadow none
+        +below(767px)
+            padding 40px 20px 60px
+            max-width 500px
+            text-align center
+        +below(480px)
+            padding 20px 0 50px
+
+    &__title
+        color black
+        font(Extra)
+        font-size 40px
+        line-height 1
+        text-transform uppercase
+        margin 0 0 45px
+        +below(480px)
+            font-size 34px
+            margin-bottom 30px
+
+
+    &__text
+        color black
+        font(Light,40)
+        font-size 20px
+        line-height 1.2
+        margin 0 0 60px
+        +below(480px)
+            font-size 16px
+            margin-bottom 30px
+
+    &__phone
+        display inline-block
+        color black
+        font(Medium,40)
+        font-size 35px
+        line-height 1
+        margin 0 0 45px
+        text-decoration none
+        &:hover
+            color @color
+            text-decoration none
+        +below(480px)
+            font-size 24px
+            margin-bottom 30px
+
+    &__social
+        font-size 0
+        margin 0 0 45px
+        +below(480px)
+            margin-bottom 30px
+
+    &__whatsapp
+    &__viber
+    &__telegram
+        display inline-block
+        vertical-align top
+        width 44px
+        height 44px
+        background-color black
+        background-position center center
+        background-repeat no-repeat
+        margin 0 25px 0 0
+    &__whatsapp
+        background-image embedurl("../../svg/whatsapp.svg","")
+        background-size 21px 21px
+    &__viber
+        background-image embedurl("../../svg/viber.svg","")
+        background-size 22px 23px
+    &__telegram
+        background-image embedurl("../../svg/telegram.svg","")
+        background-size 23px 20px
+
+    &__subtitle
+        color black
+        font(Vedium,40)
+        font-size 25px
+        margin 0 0 30px
+        +below(480px)
+            font-size 20px
+            margin-bottom 20px
+
+    &__email
+        display inline-block
+        color black
+        font(Light,40)
+        font-size 20px
+        text-decoration none
+        padding-bottom 1px
+        position relative
+        margin 0 0 45px
+        &::after
+            content ""
+            display block
+            width 0px
+            height 1px
+            background-color #000
+            position absolute
+            left 50%
+            right 50%
+            bottom 0
+            transition all .3s ease .3s
+        &:hover
+            color @color
+            text-decoration none
+            &::after
+                width 100%
+                left 0
+                right 0
+        +below(480px)
+            font-size 16px
+            margin-bottom 30px
+

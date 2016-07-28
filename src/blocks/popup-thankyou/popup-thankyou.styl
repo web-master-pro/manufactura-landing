@@ -1,0 +1,37 @@
+.popup-thankyou
+    display block
+    max-width 400px
+    min-height 200px
+    background-color white
+    box-shadow 0 0 30px rgba(0, 0, 0, 0.3)
+    padding 80px 50px 50px
+    margin auto
+    text-align center
+    +below(479px)
+        padding 70px 20px 40px
+
+    &__title
+        color #000
+        font(Extra)
+        font-size 58px;
+        line-height 1
+        text-align center
+        margin 0 0 .5em
+        +below(767px)
+            font-size 50px
+        +below(479px)
+            font-size 40px
+
+    &__text
+        color #000
+        font()
+        font-size 22px
+        line-height 1.2
+        text-align center
+        margin 0 auto 2em
+        strong
+            font(Bold)
+        +below(479px)
+            font-size 18px
+    &__button
+        max-width 270px

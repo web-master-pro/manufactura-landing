@@ -1,0 +1,60 @@
+.legal
+    width 100%
+    background #f2f2f2 url(img/legal-bg.jpg) no-repeat center center
+    background-size cover
+
+    &__in
+        container(1210px)
+        padding 180px 20px 170px
+        font-size 0
+        +below(991px)
+            padding 70px 20px
+            text-align center
+
+    &__block
+        display inline-block
+        width 100%
+        max-width 370px
+        vertical-align top
+        padding-top 180px
+        margin-bottom 30px
+
+        &:nth-child(1)
+            max-width 370px
+            margin-right 130px
+            background-image url(img/gerb.svg)
+            background-size 120px 130px
+            background-position left top
+            background-repeat no-repeat
+            +below(991px)
+                max-width 520px
+                margin 0 auto 50px
+                background-position center top
+
+        &:nth-child(2)
+            max-width 410px
+            background-image url(img/rosgosstrah.svg)
+            background-size 247px 112px
+            background-position left 20px
+            background-repeat no-repeat
+            +below(991px)
+                max-width 520px
+                margin 0 auto
+                background-position center 20px
+
+    &__text
+        color #404040
+        font(Light,40)
+        font-size 22px
+        line-height 1.6
+        text-align left
+        margin 0 0 60px
+        +below(991px)
+            text-align justify
+        +below(479px)
+            text-align center
+            font-size 18px
+            margin-bottom 30px
+
+.mfp-counter
+    display none

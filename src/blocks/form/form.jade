@@ -1,0 +1,40 @@
+mixin form-cost()
+    form.form.popup(action="assets/sendmail.php", method="POST")#form-cost&attributes(attributes)
+        h3.form__title Узнайте стоимость
+        input(type="hidden" name="form" value="form-cost")
+        .form__row
+            .form__col
+                input(type="text" name="name" placeholder="Ваше имя").input.form__input
+                input(type="email" name="email" placeholder="Ваша почта").input.form__input
+            .form__col
+                input(type="tel" name="phone" placeholder="Ваш телефон").input.form__input.js-phone-field
+                button(type="submit").button-brown.button-brown--form.form__button
+                    span Отправить
+        p.form__privacy Ваши данные никогда не будут переданы 3-м лицам
+
+mixin form-ask()
+    form.form.popup(action="assets/sendmail.php", method="POST")#form-ask&attributes(attributes)
+        h3.form__title Задайте ваш вопрос
+        input(type="hidden" name="form" value="form-ask")
+        .form__row
+            .form__col
+                input(type="text" name="name" placeholder="Ваше имя").input.form__input
+                input(type="email" name="email" placeholder="Ваша почта").input.form__input
+                input(type="tel" name="phone" placeholder="Ваш телефон").input.form__input.js-phone-field
+            .form__col
+                .textarea.form__textarea
+                    .textarea__placeholder Ваш вопрос
+                    textarea(name="message").textarea__textarea
+                button(type="submit").button-brown.button-brown--form.form__button
+                    span Отправить
+        p.form__privacy Ваши данные никогда не будут переданы 3-м лицам
+
+mixin form-callback()
+    form.form.form--one-col.popup(action="assets/sendmail.php", method="POST")#form-callback&attributes(attributes)
+        h3.form__title Закажите обратный звонок
+        input(type="hidden" name="form" value="form-callback")
+        input(type="text" name="name" placeholder="Ваше имя").input.form__input
+        input(type="tel" name="phone" placeholder="Ваш телефон").input.form__input.js-phone-field
+        button(type="submit").button-brown.button-brown--form.form__button
+            span Отправить
+        p.form__privacy Ваши данные никогда не будут переданы 3-м лицам

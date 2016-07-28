@@ -1,0 +1,32 @@
+mixin choice()
+    .choice&attributes(attributes)
+        .choice__in
+            h2.choice__title Выбираете между залогом и&nbsp;продажей?
+            p.choice__subtitle Сравните условия и выберите подходящее!
+
+            .choice__options-box
+                .choice__select-box
+                    .radio.choice__radio
+                        input(type="radio" name="choice" checked).radio__radio#choice-radio-zalog
+                        label(for="choice-radio-zalog").radio__label
+                            span Залог
+                    .radio.choice__radio
+                        input(type="radio" name="choice").radio__radio#choice-radio-sale
+                        label(for="choice-radio-sale").radio__label
+                            span Продажа
+
+                ul.choice__list.active
+                    li.choice__item До 60% от стоимости часов
+                    li.choice__item Наличными за 15 минут без комиссии
+                    li.choice__item Ставка по займу 10% в месяц
+                    li.choice__item Проценты начисляются за каждый день
+                    li.choice__item Полная конфиденциальность сделки
+                    li.choice__item Часы хранятся в сейфе
+                    li.choice__item Возможность выкупить часы
+                    li.choice__item Залоговое имущество застраховано на&nbsp;полную стоимость
+                ul.choice__list
+                    li.choice__item Выплата наличными за 15 минут
+                    li.choice__item Без комиссии
+                    li.choice__item Полная конфиденциальность сделки
+
+
