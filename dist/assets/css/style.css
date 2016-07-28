@@ -2580,7 +2580,7 @@ label.invalid-field.hidden {
        -moz-transition: opacity .5s ease;
          -o-transition: opacity .5s ease;
             transition: opacity .5s ease;
-    opacity: .05;
+    opacity: .05 !important;
 }
 
 .header__phone {
@@ -3364,7 +3364,7 @@ label.invalid-field.hidden {
            -moz-transition: opacity .5s ease;
              -o-transition: opacity .5s ease;
                 transition: opacity .5s ease;
-        opacity: .05;
+        opacity: .05 !important;
     }
 
     .header__logo.animated {
@@ -4021,7 +4021,7 @@ label.invalid-field.hidden {
            -moz-transition: opacity .5s ease;
              -o-transition: opacity .5s ease;
                 transition: opacity .5s ease;
-        opacity: .02;
+        opacity: .02 !important;
     }
 
     .header__title {

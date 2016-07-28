@@ -70,7 +70,7 @@
             margin-left 0
         ^[0].on &
             +above(768px)
-                opacity .05
+                opacity .05 !important
                 transition opacity .5s ease
         &.animated
             +above(768px)
@@ -99,7 +99,7 @@
         +below(400px)
             top 90px
         ^[0].on &
-            opacity .05
+            opacity .05 !important
             transition opacity .5s ease
         &.animated
             +above(768px)
@@ -196,7 +196,7 @@
             text-align center
         ^[0].on &
             +below(767px)
-                opacity .02
+                opacity .02 !important
                 transition opacity .5s ease
         &.animated
             +above(768px)

@@ -4,10 +4,10 @@ include ../nav/nav
 mixin header()
     header.header&attributes(attributes)
         .header__in
-            +button-nav(class="header__button-nav").animated.fadeInLeft
+            +button-nav(class="header__button-nav")
             +nav(class="header__nav")
             .header__logo(title="Мануфактура").animated.bounceInDown
-            .header__phone-block.animated.fadeInRight
+            .header__phone-block
                 a(href="tel:+79261519151").header__phone +7 (926) 151-91-51
                 a(href="#form-callback").header__call.js-popup Закажите обратный звонок
 
