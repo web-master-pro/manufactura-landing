@@ -18,7 +18,7 @@
             zoom: 16,
             center: new google.maps.LatLng(latitude, longitudeCenter),
             scrollwheel: false,
-            draggable: true,
+            draggable: false,
             zoomControl: true,
             streetViewControl: false,
             styles: styleArray,

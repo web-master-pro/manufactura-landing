@@ -6,13 +6,13 @@ $(document).ready(function(){
 
     function toggleNav(){
         if (nav.hasClass("on")){
-            nav.removeClass("on");
+            nav.removeClass("on").slideUp(300);
             button.removeClass("on");
-            header.removeClass("on");
+            // header.removeClass("on");
         } else {
-            nav.addClass("on");
+            nav.addClass("on").slideDown(300);
             button.addClass("on");
-            header.addClass("on");
+            // header.addClass("on");
          };
     };
 

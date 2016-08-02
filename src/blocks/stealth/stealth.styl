@@ -1,0 +1,117 @@
+.stealth
+    display inline-block
+
+    &__link
+        display inline-flex
+        flex-flow row nowrap
+        text-decoration none
+        &:hover
+            text-decoration none
+
+    &__logo
+        flex 0 0 auto
+        margin-right 10px
+        animation stealth 3.5s ease-in-out infinite
+
+    &__text
+        flex 0 0 auto
+        text-transform uppercase
+        color #fff
+        font(Light,40)
+        font-size 14px
+        line-height 26px
+        text-align left
+        margin 0
+
+    &__stealth
+        color #fcdb25
+        transition color 3s linear
+
+    &__marketing
+        color #fff
+        transition color 3s linear
+
+    &__text
+        &:hover
+            & ^[0]__stealth
+                color #fff
+            & ^[0]__marketing
+                color #fcdb25
+
+
+@keyframes stealth
+    0%, 100%
+        transform: translateY(2px)
+    50%
+        transform: translateY(-2px)
+
+
+
+
+// .stealth-logo
+//     height: 26px;
+//     margin-top: 8px;
+//     font-family: 'Open Sans';
+
+// .stealth-logo .Stealth-center
+//     width: 189px;
+// .stealth-logo .Stealth-center img
+//     float:left;
+//     padding-right:4px;
+
+// .stealth-logo a
+//     text-decoration: none;
+//     text-transform: uppercase;
+//     font-size: 14px;
+//     line-height: 17px;
+//     display: block;
+//     text-align: left;
+
+// .stealth-logo a:hover span.Stealth
+//     color:#000;
+//     transition: 3s;
+
+// .stealth-logo a:hover span.Marketing
+//     color:#fcdb25;
+//     transition: 3s;
+
+// .stealth-logo a div.Stealth-text
+//     color:#fcdb25;padding-top: 5px;
+
+// .stealth-logo a span.Stealth
+//     color:#fcdb25; transition: 3s;
+
+// .stealth-logo a span.Marketing
+//     color:#000;
+//     transition: 3s;
+
+// .stealth-logo .Stealth-center img
+//     left: 0;
+//     animation: stelth 3.5s ease-in-out infinite;
+
+
+
+
+
+
+
+// div.createdby {
+//     position: absolute;
+//     left: 0;
+//     top: 50px;
+//     width: 300px;
+// }
+
+// div.createdby img {
+//     float: left;
+//     margin: 0 10px 0 0;
+// }
+
+// div.createdby p {
+// font-size: 17px;
+//   color: #000000;
+// }
+
+// div.createdby p a {
+//   color: #FF000A;
+// }

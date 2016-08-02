@@ -132,13 +132,13 @@ $(document).ready(function(){
 
     function toggleNav(){
         if (nav.hasClass("on")){
-            nav.removeClass("on");
+            nav.removeClass("on").slideUp(300);
             button.removeClass("on");
-            header.removeClass("on");
+            // header.removeClass("on");
         } else {
-            nav.addClass("on");
+            nav.addClass("on").slideDown(300);
             button.addClass("on");
-            header.addClass("on");
+            // header.addClass("on");
          };
     };
 
@@ -169,7 +169,7 @@ $(document).ready(function(){
 
     $(".choice__radio").change(function(){
         var index = $(this).index(".choice__radio");
-        $(".choice__list")
+        $(".choice__block")
             .removeClass("active")
             .eq(index)
             .addClass("active");
@@ -197,7 +197,7 @@ $(document).ready(function(){
             zoom: 16,
             center: new google.maps.LatLng(latitude, longitudeCenter),
             scrollwheel: false,
-            draggable: true,
+            draggable: false,
             zoomControl: true,
             streetViewControl: false,
             styles: styleArray,
@@ -393,8 +393,8 @@ $(document).ready(function(){
         midClick: true,
         removalDelay: 500,
         mainClass: 'mfp-zoom-in',
-        overflowY: 'scroll',
-        fixedContentPos: true
+        overflowY: 'auto',
+        fixedContentPos: false
     });
 
 });

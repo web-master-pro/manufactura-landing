@@ -26,6 +26,6 @@
 //= ../libs/magnific-popup/jquery.magnific-popup.js
 //= ../libs/jquery.maskedinput/jquery.maskedinput.js
 //= ../libs/jquery-validation/jquery.validate.js
-//= ../libs/smoothscroll/smoothscroll.js
+// ../libs/smoothscroll/smoothscroll.js
 //= ../libs/waypoints/waypoints.min.js
 //= ../libs/animate.css/animate-css.js

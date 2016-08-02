@@ -5,8 +5,8 @@ $(document).ready(function(){
         midClick: true,
         removalDelay: 500,
         mainClass: 'mfp-zoom-in',
-        overflowY: 'scroll',
-        fixedContentPos: true
+        overflowY: 'auto',
+        fixedContentPos: false
     });
 
 });

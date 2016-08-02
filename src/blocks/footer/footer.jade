@@ -1,6 +1,12 @@
+include ../stealth/stealth
+
 mixin footer()
     footer.footer&attributes(attributes)
         .footer__in
-            p.footer__legal ИП Фамилия И.О. <br>ИНН&nbsp;123438938495, ОГРН&nbsp;348327850384783
-            p.footer__privacy
-                a(href="#popup-privacy").js-popup-privacy Политика конфиденциальности
+            .footer__left
+                p.footer__legal ООО "ЧАСОВОЙ ЛОМБАРД "МАНУФАКТУРА" <br>ИНН&nbsp;7704360210, ОГРН&nbsp;1167746544272
+            .footer__right
+                p.footer__privacy
+                    a(href="#popup-privacy").js-popup-privacy Политика конфиденциальности
+                +stealth()
+
